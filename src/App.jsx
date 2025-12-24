@@ -76,7 +76,7 @@ export default function App() {
                 {/* <FaList title='Изменить' /> */}
                 <FaLink title='Links' onClick={() => handleSelectedFIle(file)} />
                 <FaTrash title='Удалить' className='text-red-600' onClick={() => deleteFile(file)} />
-                <a href={`http://127.0.0.1:8000/file/download/${file}`}>
+                <a href={`https://excel-helper-server.onrender.com/file/download/${file}`}>
                   <FaDownload title='Скачать' />
                 </a>
               </div>
@@ -101,7 +101,7 @@ export default function App() {
                   <code
                     onClick={() =>
                       copyLink(
-                        `http://localhost:5173/${selected.document_name}/${sheet.name}`,
+                        `https://excel-helper-app.netlify.app/${selected.document_name}/${sheet.name}`,
                         idx
                       )
                     }
