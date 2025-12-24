@@ -107,7 +107,7 @@ export default function App() {
                     }
                     className="bg-slate-200 px-3 py-1 rounded-xl cursor-pointer hover:bg-slate-300 transition"
                   >
-                    http://localhost:5173/{selected.document_name}/{sheet.name}
+                    https://excel-helper-app.netlify.app/{selected.document_name}/{sheet.name}
                   </code>
 
                   {copiedIndex === idx && (
